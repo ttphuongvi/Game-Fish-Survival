@@ -1,0 +1,37 @@
+.button-style {
+    background-color: rgb(81, 107, 235);
+    height: 30px;
+    width: 248px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: rgba(255, 255, 255, 255);
+    border-left-color: rgba(81, 107, 235, 255);
+    border-right-color: rgba(81, 107, 235, 255);
+    border-top-color: rgba(81, 107, 235, 255);
+    border-bottom-color: rgba(81, 107, 235, 255);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button-style:hover {
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    width: 248px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: rgb(81, 107, 235);
+    border-left-color: rgb(81, 107, 235);
+    border-right-color: rgb(81, 107, 235);
+    border-top-color: rgb(81, 107, 235);
+    border-bottom-color: rgb(81, 107, 235);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

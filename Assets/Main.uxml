@@ -1,2 +1,10 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="Style/style.uss" />
+    <ui:VisualElement style="height: 254px; flex-grow: 1; align-items: center; justify-content: center;">
+        <ui:VisualElement name="bxMenu" style="height: 435px; width: 306px; opacity: 1; background-color: rgb(255, 255, 255); border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; align-items: center; justify-content: center;">
+            <ui:Label text="Main menu" display-tooltip-when-elided="true" name="lbMainMenu" style="position: absolute; top: 20px; color: rgb(81, 107, 235); -unity-font-style: bold; font-size: 16px;" />
+            <ui:Button text="Start" display-tooltip-when-elided="true" name="btnStart" class="button-style" />
+            <ui:Button text="Exit" display-tooltip-when-elided="true" name="btnExit" class="button-style" />
+        </ui:VisualElement>
+    </ui:VisualElement>
 </ui:UXML>
