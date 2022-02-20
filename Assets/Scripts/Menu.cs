@@ -24,7 +24,7 @@ public class Menu : MonoBehaviour
     }
 
     void StartButtonPressed() {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadSceneAsync("MainScene");
     }
 
     void ExitButtonPressed() {
