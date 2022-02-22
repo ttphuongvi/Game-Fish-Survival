@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveFIsh : MonoBehaviour
 {
-    public float moveSpeed = 3;
+    public float moveSpeed = 1;
     public bool leftDirection = true;
 
     // Start is called before the first frame update
