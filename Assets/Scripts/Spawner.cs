@@ -6,6 +6,7 @@ public class Spawner : MonoBehaviour
 {
     public GameObject fish;
     public float spawnTime = 1f;
+    public int maxFish = 3, numFish = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,10 @@ public class Spawner : MonoBehaviour
     }
 
     void createFish() {
-        Instantiate(fish, transform.position, transform.rotation, GameObject.Find("Fishs").transform);
+        if (numFish < maxFish) {
+            Instantiate(fish, transform.position, transform.rotation, GameObject.Find("Fishs").transform);    
+            numFish++;
+        }
+          
     }
 }

@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveFIsh : MonoBehaviour
+public class MoveFish : MonoBehaviour
 {
-    public float moveSpeed = 1;
+    public float moveSpeed = 0.2f;
     public bool leftDirection = true;
 
     // Start is called before the first frame update
@@ -16,8 +16,8 @@ public class MoveFIsh : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float directionKey = Input.GetKey(KeyCode.A) ? -1 : (Input.GetKey(KeyCode.D) ? 1 : 0);
-        float y = Input.GetKey(KeyCode.S) ? -1 : (Input.GetKey(KeyCode.W) ? 1 : 0);
+        float directionKey = (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) ? -1 : (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) ? 1 : 0);
+        float y = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) ? -1 : (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) ? 1 : 0);
 
         if ((directionKey == -1 && !leftDirection) || (directionKey == 1 && leftDirection))
             transform.Rotate(0, 180, 0, Space.World);
