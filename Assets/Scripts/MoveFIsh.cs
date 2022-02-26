@@ -18,7 +18,7 @@ public class MoveFish : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Cursor.visible = false;
     }
 
     void UpdateByKey()
@@ -78,7 +78,5 @@ public class MoveFish : MonoBehaviour
         UpdateByKey();
         if (!isKeyDown)
             UpdateByMouse();
-
-
     }
 }
